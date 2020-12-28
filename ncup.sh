@@ -496,7 +496,7 @@ for x in "$@"; do
     torrent_link=$(curl -Ls -o /dev/null -w "%{url_effective}" "https://ncore.cc/upload.php" \
     -b "$cookies" \
     -F getUnique="$unique_id" \
-    -F eredeti=igen \
+    -F eredeti=nem \
     -F infobar_site=imdb \
     -F tipus="$type" \
     -F torrent_nev="$torrent_name" \
