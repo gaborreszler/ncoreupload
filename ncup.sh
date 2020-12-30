@@ -370,7 +370,7 @@ for x in "$@"; do
 
   # Defining torrent category.
   resolution=$(grep -oP '\d+(?=[ip])' <<< "$torrent_name")
-  type=xvid
+  type=misc
   if (( resolution >= 720 )); then
     type=hd
   fi
